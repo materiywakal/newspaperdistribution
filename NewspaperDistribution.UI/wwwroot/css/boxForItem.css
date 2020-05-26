@@ -1,0 +1,32 @@
+﻿.box {
+    border: 2px solid black;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 20px;
+    max-width: 400px;
+}
+
+a.boxText {
+    color: black;
+}
+
+a.boxText:hover {
+    text-decoration: none;
+}
+
+.newspaperTitle {
+    text-align: center;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newspaperAuthor {
+    text-align: right;
+    display: block;
+    margin-bottom: 10px;
+}
+
+.newspaperPrice {
+    text-align: right;
+    display: block;
+}

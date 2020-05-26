@@ -1,0 +1,17 @@
+﻿@using System.Collections
+@model NewspaperViewModel
+@{
+    ViewData["Title"] = Model.Title;
+}
+<link rel="stylesheet" href="~/css/boxForItem.css" />
+
+<div class="text-center">
+    <h1 class="display-4">@Model.Title</h1>
+    <h2>Автор @Model.FullName</h2>
+    <h3>Цена подписки @Model.SubscriptionPrice</h3>
+    <h2>Типографии печатающие газету:</h2>
+    @foreach (var printHouse in (IEnumerable<PrintingHouseViewModel>)ViewBag.PrintingHouses)
+    {
+        <p>@printHouse.Title</p>
+    }
+</div>

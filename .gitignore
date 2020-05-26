@@ -1,0 +1,12 @@
+bin
+/ProductionizationManager/*.jfm
+obj
+*.suo
+*.pdb
+*.user
+*.database
+*.dbmdl
+*.jfm
+.vs/
+bin/
+obj/

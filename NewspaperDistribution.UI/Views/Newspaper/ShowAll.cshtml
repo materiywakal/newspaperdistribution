@@ -1,0 +1,19 @@
+﻿@{
+    ViewData["Title"] = "Газеты";
+}
+@model IEnumerable<NewspaperViewModel>
+<link rel="stylesheet" href="~/css/boxForItem.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Список газет</h1>
+    @foreach (var value in Model)
+    {
+        <div class="box">
+            <a class="boxText" href="Newspaper/Show/@value.NewspaperId">
+                <div class="newspaperTitle">@value.Title</div>
+                <div class="newspaperAuthor">Автор @value.FullName</div>
+                <div class="newspaperPrice">Стоимость подписки @value.SubscriptionPrice р.</div>
+            </a>
+        </div>
+    }
+</div>

@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Типографии";
+}
+@model IEnumerable<PrintingHouseViewModel>
+<link rel="stylesheet" href="~/css/boxForItem.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Список типографий</h1>
+    @foreach (var value in Model)
+    {
+        <div class="box">
+            <a class="boxText" href="#">
+                <div class="newspaperTitle">@value.Title</div>
+                <div class="newspaperAuthor">Адрес @value.Address</div>
+            </a>
+        </div>
+    }
+</div>

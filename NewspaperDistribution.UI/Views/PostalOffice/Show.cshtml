@@ -1,0 +1,18 @@
+﻿@{
+    ViewData["Title"] = "Почтовые отделения";
+}
+@model IEnumerable<PostalOfficeViewModel>
+<link rel="stylesheet" href="~/css/boxForItem.css" />
+
+<div class="text-center">
+    <h1 class="display-4">Список почтовых отделений</h1>
+    @foreach (var value in Model)
+    {
+        <div class="box">
+            <a class="boxText" href="#">
+                <div class="newspaperTitle">Номер отделения @value.OfficeNumber</div>
+                <div class="newspaperAuthor">Адрес @value.Address</div>
+            </a>
+        </div>
+    }
+</div>
